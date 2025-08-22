@@ -30,18 +30,18 @@ Password: password
 Bước 8: Kết nối tới server PostgreSQL
 Ấn chuột phải vào Servers -> Register -> Server...
 
-Tab General:
-
-Name: postgres
-
-Tab Connection:
-
-Host name/address: host.docker.internal
-
-Port: 5432
-
-Database name: postgres
-
-Username: postgres
-
-Password: password
+  Tab General:
+  
+    Name: postgres
+  
+  Tab Connection:
+  
+    Host name/address: host.docker.internal
+    
+    Port: 5432
+    
+    Database name: postgres
+    
+    Username: postgres
+    
+    Password: password
