@@ -1,4 +1,6 @@
-Hướng dẫn cài đặt PGVector với Docker Desktop
+# Hướng dẫn cài đặt PGVector với Docker Desktop
+
+
 Bước 1: Kéo image PostgreSQL có PGVector
 docker pull pgvector/pgvector:pg16
 
