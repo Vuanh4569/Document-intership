@@ -24,7 +24,7 @@ docker run --name pgadmin-container -p 5432:5432 -e PGADMIN_DEFAULT_EMAIL=user@d
 Bước 6: Truy cập PGAdmin
 
 Mở trình duyệt và truy cập:
-localhost:5050
+localhost:5432
 
 Bước 7: Đăng nhập
 
