@@ -11,7 +11,7 @@ docker volume create pgvector-data
 
 Bước 3: Chạy container PostgreSQL với PGVector
 
-docker run --name pgvector-container -e POSTGRES_PASSWORD=password -p 5050:80 -v pgvector-data:/var/lib/postgresql/data -d pgvector/pgvector:pg16
+docker run --name pgvector-container -e POSTGRES_PASSWORD=password -p 5432:5432 -v pgvector-data:/var/lib/postgresql/data -d pgvector/pgvector:pg16
 
 Bước 4: Kéo image PGAdmin
 
@@ -19,7 +19,8 @@ docker pull dpage/pgadmin4
 
 Bước 5: Chạy container PGAdmin
 
-docker run --name pgadmin-container -p 5432:5432 -e PGADMIN_DEFAULT_EMAIL=user@domain.com -e PGADMIN_DEFAULT_PASSWORD=password -d dpage/pgadmin4
+
+docker run --name pgadmin-container -p 5050:80 -e PGADMIN_DEFAULT_EMAIL=user@domain.com -e PGADMIN_DEFAULT_PASSWORD=password -d dpage/pgadmin4
 
 Bước 6: Truy cập PGAdmin
 
